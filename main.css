@@ -1,0 +1,333 @@
+* {margin: 0; padding: 0;}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #F3EFDF;
+    cursor: url('./img/cursor\ \(1\).cur'), auto;
+}
+li {list-style: none;}
+a {text-decoration: none; color:black;}
+img {display: block;}
+
+/* ------header & main_visual------ */
+.main_visual {
+    width: 100%;
+    position: relative;
+}
+.main_visual img {
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.header i {
+    font-size: 30px;
+    color: white;
+}
+.header .search {
+    margin-left: 30px;
+}
+.header .right {
+    margin-right: 30px;
+}
+.header .cart {
+    margin-right: 20px;
+}
+.header .inner {
+    width: 1240px;
+    margin: 0 auto;
+    height: 50px;
+}
+.inner ul {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.inner ul li {
+    color: white;
+}
+.inner ul li a {color: white;}
+.ant {
+    position: absolute;
+    top: 300px;
+    right: 560px;
+}
+.ant img {
+    width: 260px;
+    position: relative;
+    animation-name: ant;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes ant {
+    0% {left: 0; top: 0;}
+    100% {left: 100px; top: 0;}
+}
+/* ------header & main_visual------ */
+
+
+/* ------event------ */
+.event {
+    width: calc(100%-30px);
+    height: auto;
+    padding: 50px 30px;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+.event .img {
+    flex: 1;
+    margin-bottom: 10px;
+}
+.event img {
+    width: 100%;
+}
+.event strong {
+    display: block;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.event p {
+    font-size: 20px;
+    margin: 10px 0 20px 0;
+}
+.event a {
+    display: block;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 268px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+}
+/* ------event------ */
+
+
+/* ------best_item------ */
+.best_item {
+    width: calc(100%-30px);
+    height: auto;
+    padding: 50px 30px;
+    margin-bottom: 100px;
+}
+.best_top {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.item_box {
+    display: flex;
+    gap: 30px;
+}
+.item_box img {
+    width: 100%;
+}
+.best_item .title {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.8px;
+}
+.best_item p {
+    font-size: 20px;
+}
+.best_top a {
+    display: inline-block;
+    width: 268px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    line-height: 50px;
+    margin-right: 30px;
+}
+.best_top a:last-child {
+    margin-right: 0;
+}
+.item_tap {
+    margin-top: 50px;
+}
+/* ------best_item------ */
+
+
+/* ------promotion------ */
+.promotion {
+    width: calc(100%-30px);
+    height: auto;
+    padding: 50px 30px;
+    display: flex;
+    margin-bottom: 100px;
+}
+.pro_text {
+    flex: 1;
+}
+.pro_text .font {
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.product .swiper {
+    flex: 2;
+}
+.product .swiper img {
+    width: 100%;
+}
+/* ------promotion------ */
+
+
+/* ------brand------ */
+.brand {
+    width: calc(100%-30px);
+    height: auto;
+    text-align: center;
+    padding: 50px 30px 200px 30px;
+}
+.brand .title {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.8px;
+}
+.brand p {
+    font-size: 20px;
+}
+.brand_box {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.brand .box {
+    flex: 1;
+}
+.brand .box img {
+    width: 100%;
+}
+.brand .box_text {
+    background-color: white;
+    height: 160px;
+}
+.brand .box_text strong {
+    display: inline-block;
+    margin-top: 30px;
+}
+.brand .box_text p {
+    margin: 30px 0 0 0;
+    font-size: 16px;
+}
+/* ------brand------ */
+
+
+/* ------animation------ */
+.animation {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+.ani_top {
+    width: 100%;
+    display: flex;
+    transform: translateX(100%);
+    animation: ani 30s linear infinite;
+    animation-fill-mode: forwards;
+}
+.ani_top img {
+    width: 100%;
+}
+.ani_top .img {
+    width: 200px; height: 200px;
+    flex: 1;
+}
+.ani_top .box {
+    width: 200px; height: 200px;
+    background-color: black;
+    color: white;
+    flex: 1;
+}
+@keyframes ani {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-70%);
+    }
+}
+.ani_top .box span {
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 4px;
+    transform: rotate(-45deg);
+    margin-top: 80px;
+    margin-left: 40px;
+}
+/* ------animation------ */
+
+/* ------footer------ */
+.footer {
+    width: calc(100%-30px);
+    height: auto;
+    display: flex;
+    font-size: 30px;
+    padding: 100px 30px;
+}
+.footer .left {
+    flex: 1;
+    display: flex;
+}
+.footer .right {
+    flex: 1;
+    display: flex;
+}
+.footer .box {
+    flex: 1;
+}
+.f_box01 li, .f_box02 li {
+    height: 60px;
+    font-weight: bold;
+}
+.footer_logo img {
+    width: 100%;
+}
+.f_box03 .number {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ------footer------ */
+
+/* ------button------ */
+.toTop {
+    bottom: 120px;
+    right: 50px;
+}
+.toBottom {
+    bottom: 50px;
+    right: 50px;
+}
+.btn {
+    position: fixed;
+    width: 50px; height: 50px;
+    background-color: #F3EFDF;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+}
+.btn i {
+    line-height: 50px;
+}
+/* ------button------ */
