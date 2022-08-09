@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAGGU KOREA 바쿠 코리아</title>
+    <link rel="stylesheet" href="sub.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+
+    <!-- SWIPER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.css" />
+
+    <script src="https://kit.fontawesome.com/b1d3c025ef.js" crossorigin="anonymous"></script>
+
+    <script defer src="sub.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        
+        <div class="headerTop">
+
+        <div class="right">
+            <span class="my" id="my"><i class="xi-user-o"></i></span>
+            <nav class="gnb">
+                <a class="cart_btn"><i class="xi-cart-o"></i></a>
+                    <div class="cart_chart" id="cart-container">
+                      <div id="cart-with-items">
+                        <div class="cart-column">
+                          <h3>사진</h3>
+                          <h3>상품명</h3>
+                          <h3>가격</h3>
+                          <h3>수량</h3>
+                          <h3>상품제거</h3>
+                        </div>
+                        <div id="item-body">
+                        </div>
+                        <div id="total">
+                          <h3 id="total-items"></h3>
+                          <h2 id="total-amount"></h2>
+                        </div>
+                      </div>
+                    </div>
+                  </nav><!--gnb-->
+            </div> <!--right-->
+
+            <div class="logo"><a href="../index.html"><img src="./img/logo.png" alt=""></a></div>
+            </div><!--headerTop-->
+        
+            <div class="search-box">
+                <input type="text" class="search-txt">
+                <a class="search-btn" href="#">
+                <i class="xi-search"></i>
+                </a>
+                </div>
+        
+                <header class="inner">
+                <ul>
+                    <li><a href="./sub.html">FANNY PACK</a></li>
+                    <li><a href="./sub.html">STANDARD</a></li>
+                    <li><a href="./sub.html">BABY</a></li>
+                    <li><a href="./sub.html">WINE BAG</a></li>
+                    <li><a href="./sub.html">BIG</a></li>
+                    <li><a href="./sub.html">DUCK</a></li>
+                    <li><a href="./sub.html">POUCH&CASE</a></li>
+                    <li><a href="./sub.html">CROSS BODY</a></li>
+                    <li><a href="./sub.html">TOWEL</a></li>
+                </ul>
+            </header><!--inner-->
+      </header><!--header-->
+
+      <div class="my_bg"></div>
+    
+    <div class="my_page">
+        <i class="fa-solid fa-xmark" id="close_btn"></i>
+        <div class="login">
+            <p>안녕하세요!</br>고객님은 현재 '로그아웃' 상태 입니다.</p>
+            <div class="login_btn">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+            </div><!--login_btn-->
+        </div><!--login-->
+        <div class="tap">
+            <a href="#" id="myPage">마이페이지</a>
+            <a href="#" id="community">커뮤니티</a>
+        </div><!--tap-->
+        
+        <div class="tap_01">
+        <section class="delivery_info">
+        <div class="delivery">
+            <p>나의 주문처리 현황 (3개월 기준)</p>
+            <span>입금전<strong>0</strong></span>
+            <span>배송준비<strong>0</strong></span>
+            <span>배송중<strong>0</strong></span>
+            <span>배송완료<strong>0</strong></span>
+        </div><!---delivery-->
+        <div class="info">
+            <p>취소<strong>0</strong></p>
+            <p>교환<strong>0</strong></p>
+            <p>반품<strong>0</strong></p>
+        </div><!--info-->
+        </section><!--delivery_info-->
+
+        <section class="account_info">
+            <ul class="info_box01">
+                <li><a href="#">주문조회</a></li>
+                <li><a href="#">관심상품</a></li>
+                <li><a href="#">쿠폰</a></li>
+                <li><a href="#">배송 주소록 관리</a></li>
+            </ul>
+            <ul class="info_box02">
+                <li><a href="#">회원정보</a></li>
+                <li><a href="#">적립금</a></li>
+                <li><a href="#">게시물 관리</a></li>
+                <li><a href="#">정기배송 관리</a></li>
+            </ul>
+        </section><!--account_info-->
+
+        <section class="recent">
+            <div class="title">
+                <p>최근 본 상품</p>
+                <p><a href="#">전체보기</a></p>
+            </div>
+            <span>최근 본 상품 내역이 없습니다.</span>
+        </section><!--recent-->
+    </div><!--tap_01-->
+
+    <div class="tap_02">
+    <section class="my_comm">
+        <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">REVIEW</a></li>
+            <li><a href="#">상품 Q&A</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">ABOUT US</a></li>
+        </ul>
+        <div class="customer">
+            <p class="title">CUSTOMER CENTER</p>
+            <div class="cus_info">
+                <h2>1588-8564</h2>
+                <p class="text">월요일-금요일 09:00AM-6:00PM </br>
+                                (점심시간 12:00AM-13:00PM) </br>
+                                토/일요일, 공휴일은 쉽니다. </br>
+                                *전화상담이 어려울 경우 문의 게시판을 이용해주세요.
+                </p>
+                <a href="#"><i class="fa-solid fa-comment"></i>무엇을 도와드릴까요?</a>
+            </div><!--cus_info-->
+        </div>
+    </section><!--my_comm-->
+    </div><!--tap_02-->  
+    </div><!--my_page-->
+
+      <section class="best_item">
+        <div class="title">
+          <p class="best">BEST ITEM</p>
+          <p class="path"><a href="../index.html">홈</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="./sub.html">스탠다드</a>
+          </p>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="../detail_page/detail.html">
+                  <img src="./img/standard_img02.jpg" alt="" class="stay_img">
+                  <img src="./img/standard_img02-1.jpg" alt="" class="hover_img">
+                <span>best 01</span></a></div>
+                <div class="swiper-slide"><a href="../detail_page/detail.html">
+                  <img src="./img/standard_img17.jpg" alt="" class="stay_img">
+                  <img src="./img/standard_img17-1.jpg" alt="" class="hover_img">
+                <span>best 02</span></a></div>
+                <div class="swiper-slide"><a href="../detail_page/detail.html">
+                  <img src="./img/standard_img20.jpg" alt="" class="stay_img">
+                  <img src="./img/standard_img20-1.jpg" alt="" class="hover_img">
+                <span>best 03</span></a></div>
+                <div class="swiper-slide"><a href="../detail_page/detail.html">
+                  <img src="./img/standard_img21.jpg" alt="" class="stay_img">
+                  <img src="./img/standard_img21-1.jpg" alt="" class="hover_img">
+                <span>best 04</span></a></div>
+                <div class="swiper-slide"><a href="../detail_page/detail.html">
+                  <img src="./img/standard_img24.jpg" alt="" class="stay_img">
+                  <img src="./img/standard_img24-1.jpg" alt="" class="hover_img">
+                <span>best 05</span></a></div>
+                <div class="swiper-slide"><a href="../detail_page/detail.html">
+                  <img src="./img/standard_img22.jpg" alt="" class="stay_img">
+                  <img src="./img/standard_img22-1.jpg" alt="" class="hover_img">
+                <span>best 06</span></a></div>
+                <div class="swiper-slide"><a href="../detail_page/detail.html">
+                  <img src="./img/standard_img06.jpg" alt="" class="stay_img">
+                  <img src="./img/standard_img06-1.jpg" alt="" class="hover_img">
+                <span>best 07</span></a></div>
+                <div class="swiper-slide"><a href="../detail_page/detail.html">
+                  <img src="./img/standard_img04.jpg" alt="" class="stay_img">
+                  <img src="./img/standard_img04-1.jpg" alt="" class="hover_img">
+                <span>best 08</span></a></div>
+                <div class="swiper-slide"><a href="../detail_page/detail.html">
+                  <img src="./img/standard_img31.jpg" alt="" class="stay_img">
+                  <img src="./img/standard_img31-1.jpg" alt="" class="hover_img">
+                <span>best 09</span></a></div>
+                </div><!--swiper-wrapper-->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div><!--swiper--> 
+      </section><!--best_item-->
+
+      <div class="filterbox">
+        <button class="sortreset">기본정렬</button><br><br>
+        <button class="descending">낮은가격순</button><br><br>
+        <button class="ascending">높은가격순</button>
+      </div>
+      
+      <section class="product_wrap">
+      </section>
+      
+      <button class="showmore">더보기</button>
+      <button class="hide">접기</button>
+
+       <footer class="footer">
+        <div class="left">
+        <div class="f_box01 box">
+            <ul>
+                <li><a href="#">회사 소개</a></li>
+                <li><a href="#">이용 약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용 안내</a></li>
+            </ul>
+        </div><!--f_box01-->
+        <div class="f_box02 box">
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">REVIEW</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </div><!--f_box02-->
+    </div><!--left-->
+    <div class="right">
+        <div class="f_box03 box">
+            <strong>CONTACT:</strong>
+            <p class="number">1588-8564</p>
+            <p class="notice"> 평일 : 09:00 - 18:00 (점심시간 12:00 - 13:00) </br>
+                고객센터 운영시간에 순차적으로 답변드리겠습니다. </br>
+                토요일, 일요일, 공휴일 휴무 </br>
+                통화량이 많을때는 문의 게시판으로 문의주세요.</p>
+        </div><!--f_box03-->
+        <div class="f_box04 box">
+            <a href="#">문의 게시판</a>
+            <a href="#">자주 묻는 질문</a>
+        </div>
+    </div><!--right-->
+    </footer>
+
+    <div class="footer_logo">
+        <a href="../index.html"><img src="./img/footer_logo (1).png" alt=""></a>
+    </div>
+
+<div class="toTop btn"><i class="fa-solid fa-angle-up"></i></div>
+<div class="toBottom btn"><i class="fa-solid fa-angle-down"></i></div>
+
+
+
+
+
+</body>
+</html>
